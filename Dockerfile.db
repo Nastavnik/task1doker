@@ -1,4 +1,4 @@
-FROM postgres1: latest
+FROM postgres1:latest
 ENV POSTGRES_PASSWORD=12345
 ENV POSTGRES_USER=user1
 ENV POSTGRES_DB=datebase1
