@@ -1,5 +1,5 @@
 FROM postgres:latest
-ENV POSTGRES_PASSWORD=12345
-ENV POSTGRES_USER=user1
-ENV POSTGRES_DB=datebase1
-COPY script/init.sql /docker-entrypoint-initdb.d/init.sql
+ENV POSTGRES_PASSWORD=keypass
+ENV POSTGRES_USER=SERG
+ENV POSTGRES_DB=db_test
+COPY init_script/init.sql /docker-entrypoint-initdb.d/init.sql
